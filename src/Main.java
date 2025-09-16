@@ -60,7 +60,7 @@ public class Main {
         int eggs=4;
         int weightEgg=70;
         int commonWeight=(banana*weightBanana)+(milk*milkDestiny)+(iceCrem*weightCream)+(eggs*weightEgg);
-        float weightInKg=commonWeight/1000f;
+        long weightInKg=commonWeight/1000;
         System.out.println("Общий вес напитка составляет "+commonWeight+" граммов, что в килограммах составляет "+weightInKg+" кг");
         System.out.println();
 
@@ -76,12 +76,12 @@ public class Main {
         int salaryMary=67760;  //нынешняя зарплата
         int salaryDeny=83690;
         int salaryChristy=76230;
-        float newMaryS=salaryMary*1.1f; //заработная плата после повышения
-        float newDenyS=salaryDeny*1.1f;
-        float newChrityS=salaryChristy*1.1f;
-        float difMaryS=newMaryS-salaryMary;  //разница после повышения зарплаты
-        float difDanyS=newDenyS-salaryDeny;
-        float difChristyS=newChrityS-salaryChristy;
+        double newMaryS=salaryMary*1.1; //заработная плата после повышения
+        double newDenyS=salaryDeny*1.1f;
+        double newChrityS=salaryChristy*1.1f;
+        double difMaryS=newMaryS-salaryMary;  //разница после повышения зарплаты
+        double difDanyS=newDenyS-salaryDeny;
+        double difChristyS=newChrityS-salaryChristy;
         System.out.println("«Маша теперь получает "+newMaryS+" рублей. Годовой доход вырос на "+difMaryS+" рублей».");
         System.out.println("«Денис теперь получает "+newDenyS+" рублей. Годовой доход вырос на "+difDanyS+" рублей».");
         System.out.println("«Кристина теперь получает "+newChrityS+" рублей. Годовой доход вырос на "+difChristyS+" рублей».");
